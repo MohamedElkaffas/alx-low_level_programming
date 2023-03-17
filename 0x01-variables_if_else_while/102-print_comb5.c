@@ -11,6 +11,7 @@
 int main(void)
 {
 	int i, j, k, l;
+
 	i = 0;
 
 	while (i < 10)
@@ -38,7 +39,6 @@ int main(void)
 					}
 					++l;
 				}
-
 				l = 0;
 				++k;
 			}
