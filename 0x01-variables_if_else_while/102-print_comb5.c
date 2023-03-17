@@ -52,7 +52,7 @@ int main(void)
 			++j;
 		}
 
-		++l;
+		++i;
 	}
 
 	putchar(10);
