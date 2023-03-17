@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /*
- * main -this is the starting pt of program
+ * main - this is the starting pt of program
  *
  * Return: 0 to indicate a successful run
  */
