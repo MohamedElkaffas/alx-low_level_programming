@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - print last digit in random number by seed
+ * main - print last digit in random number
  *
  * Description: print last digit in random number
  *
@@ -18,10 +18,10 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	mod = n % 10;
 	if (mod > 5)
-		printf("Last digit of %d is %d and is greater than 5\n", n, last);
+		printf("Last digit of %d is %d and is greater than 5\n", n, mod);
 	else if (mod == 0)
-		printf("Last digit of %d is 0 and is 0\n", n, last);
-	else if (mod < 6 && last != 0)
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
+		printf("Last digit of %d is %d and is 0\n", n, mod);
+	else if (mod < 6 && mod != 0)
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, mod);
 	return (0);
 }
