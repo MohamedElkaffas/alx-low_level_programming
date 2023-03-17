@@ -1,10 +1,9 @@
 #include<stdio.h>
 
 /*
- * main - starting pt of program
+ * main -this is the starting pt of program
  *
- * Return - 0 to indicate a successful run
- *
+ * Return: 0 to indicate a successful run
  */
 
 int main(void)
