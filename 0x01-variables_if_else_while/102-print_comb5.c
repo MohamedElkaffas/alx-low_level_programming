@@ -11,9 +11,7 @@
 int main(void)
 {
 	int i, j, k, l;
-
 	i = 0;
-
 	while (i < 10)
 	{
 		j = 0;
@@ -21,7 +19,6 @@ int main(void)
 		while (j < 10)
 		{
 			l = j + 1;
-
 			k = i;
 
 			while (k < 10)
@@ -36,25 +33,18 @@ int main(void)
 					if (i != 9 || j != 8 || k != 9 || l != 9)
 					{
 						putchar(',');
-
 						putchar(' ');
 					}
-
 					++l;
-
 				}
 
 				l = 0;
-
 				++k;
 			}
-
 			++j;
 		}
-
 		++i;
 	}
-
 	putchar(10);
 	return (0);
 }
