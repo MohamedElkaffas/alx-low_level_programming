@@ -12,6 +12,7 @@ int main(void)
 {
 	int i, j, k, l;
 	i = 0;
+
 	while (i < 10)
 	{
 		j = 0;
