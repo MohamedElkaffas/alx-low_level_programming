@@ -14,7 +14,7 @@ int main(void)
 
 	printf("%ld, %ld", a, b);
 
-	while (cnt < 98)
+	while (cnt < 100)
 	{
 		c = (long)a + b;
 		printf(", %ld", c);
