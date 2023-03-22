@@ -9,15 +9,15 @@
 
 int main(void)
 {
-	int a = 0, b = 1, cnt = 0;
+	int a = 1, b = 2, cnt = 2;
 	long c;
 
 	printf("%d, %d", a, b);
 
-	while (cnt < 96)
+	while (cnt < 98)
 	{
 		c = a + b;
-		printf(", %d", c);
+		printf(", %ld", c);
 		a = b;
 		b = c;
 		++cnt;
