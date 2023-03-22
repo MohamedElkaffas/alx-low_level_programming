@@ -9,10 +9,10 @@
 
 int main(void)
 {
-	int a = 1, b = 2, cnt = 2;
+	long a = 1, b = 2, cnt = 2;
 	long c;
 
-	printf("%d, %d", a, b);
+	printf("%ld, %ld", a, b);
 
 	while (cnt < 98)
 	{
