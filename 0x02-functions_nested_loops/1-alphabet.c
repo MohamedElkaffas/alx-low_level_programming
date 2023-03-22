@@ -1,9 +1,11 @@
 #include "main.h"
 
+void print_alphabet(void);
+
 /**
  * print_alphabet - print alphabet
+ * Return: Nothing
  *
- * Return: void
  */
 
 void print_alphabet(void)
@@ -17,3 +19,4 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 }
+
