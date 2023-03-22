@@ -9,15 +9,15 @@
 
 int main(void)
 {
-	long a = 1, b = 2, cnt = 2;
-	long c;
+	unsigned long a = 1, b = 2, cnt = 2;
+	unsigned long c;
 
-	printf("%ld, %ld", a, b);
+	printf("%lu, %lu", a, b);
 
-	while (cnt < 100)
+	while (cnt < 98)
 	{
 		c = (long)a + b;
-		printf(", %ld", c);
+		printf(", %lu", c);
 		a = b;
 		b = c;
 		++cnt;
