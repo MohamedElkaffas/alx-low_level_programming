@@ -16,7 +16,7 @@ int main(void)
 
 	while (cnt < 98)
 	{
-		c = (long)a + b;
+		c = (unsigned long)a + b;
 		printf(", %lu", c);
 		a = b;
 		b = c;
