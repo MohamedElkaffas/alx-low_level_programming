@@ -25,7 +25,7 @@ int main(void)
 		else
 		{
 			printf("%.0Lf", c0);
-			for (j = 10; j <= 100000; j *= 10)
+			for (j = 10; j <= 10000; j *= 10)
 			{
 				if (j > c1)
 				{
