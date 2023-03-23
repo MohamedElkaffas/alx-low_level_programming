@@ -10,7 +10,7 @@ int main(void)
 	int i;
 
 	printf("%.0Lf, %.0Lf, ", a1, b1);
-	for (i = 1; i <= 98; ++i)
+	for (i = 1; i <= 94; ++i)
 	{
 		c0 = a0 + b0;
 		c1 = a1 + b1;
@@ -34,7 +34,7 @@ int main(void)
 			}
 			printf("%.0Lf", c1);
 		}
-		if (i != 98)
+		if (i != 94)
 		{
 			printf(", ");
 		}
