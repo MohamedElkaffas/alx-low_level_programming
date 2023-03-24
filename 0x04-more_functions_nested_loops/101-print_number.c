@@ -8,11 +8,12 @@
  * Return: result (int)
  */
 
-int  power(int base, int exp)
+int power(int base, int exp)
 {
 	int i, num;
 
 	num = 1;
+
 	for (i = 0; i < exp; ++i)
 		num *= base;
 
