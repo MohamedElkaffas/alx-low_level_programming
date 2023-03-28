@@ -15,7 +15,7 @@ unsigned long check(char *s)
 		sum += *s;
 		++s;
 	}
-return (sum);
+	return (sum);
 }
 /**
  * main - prints password for crakme
