@@ -16,6 +16,8 @@ void print_array(int *a, int n)
 	cnt = 1;
 	if (n < 0)
 		return;
+	if (n == 0)
+		putchar('\n');
 	if (n > 0)
 	{
 		while (cnt < n)
