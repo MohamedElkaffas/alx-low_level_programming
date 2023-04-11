@@ -1,1 +1,1 @@
-staticlib
+h
