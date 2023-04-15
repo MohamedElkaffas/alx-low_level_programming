@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "holberton.h"
 /**
 * main - multiply 2 numbers as arguments
 * @argc: number of arguments
@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 {
 unsigned long mul;
 int i, j;
+
 	if (argc != 3)
 	{ printf("Error\n");
 	exit(98); }
