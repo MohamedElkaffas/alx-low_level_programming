@@ -120,6 +120,7 @@ int main(int argc, char **argv)
 		}
 		multi_res[l - b - ten - 1] += c + '0';
 	}
+
 	print_string(multi_res);
 	free(multi_res);
 	return (0);
