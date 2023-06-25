@@ -1,65 +1,38 @@
 #include "lists.h"
-/**
- * dlistint_len - returns the number of elements in a dlistint_t list
- * @h: head of doubly linked list
- * Return: number of nodes
- */
-
-size_t dlistint_len(const dlistint_t *h)
-{
-	int cnt = 0;
-
-	while (h)
-		++cnt, h = h->next;
-	return (cnt);
-}
 
 /**
- * insert_dnodeint_at_index - inserts a new node at a given position
- * @h: head of linked list
- * @idx: index
- * @n: integer value of node
- * Return: address of new node, return NULL if fails
+ * insert_dnodeint_at_index - function with three arguments
+ * @h: pointer to doubly linked list
+ * @idx: index position to insert node
+ * @n: value of new node
+ * Description: inserting new node into a doubly linked list
+ * Return: address of new node or NULL if failed
  */
-
-
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *new, *temp;
-	size_t length;
-	unsigned int i = 0;
+	dlistint_t *new, *cursor;
 
 	if (h == NULL)
 		return (NULL);
-	if (idx == 0)
+	if (!idx)
 		return (add_dnodeint(h, n));
-
-	length = dlistint_len(*h);
-	if (idx == length - 1)
-		return (add_dnodeint_end(h, n));
-
+	/* loop until nth node of idx */
+	cursor = *h;
+	while (idx > 1 && cursor && cursor->next)
+		cursor = cursor->next, --idx;
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
 		return (NULL);
+	if (idx > 1 || cursor == NULL)
+		return (NULL);
+
+	/* assign value to new node */
 	new->n = n;
-	if (*h == NULL)
-	{
-		new->prev = NULL, new->next = NULL;
-		*h = new;
-		return (new);
-	}
-	temp = *h;
-	while (temp)
-	{
-		if (i == idx)
-		{
-			new->next = temp, new->prev = temp->prev;
-			temp->prev->next = new, temp->prev = new;
-			return (new);
-		}
-		temp = temp->next;
-		++i;
-	}
-	free(new);
-	return (NULL);
+
+	/* insert node */
+	if (cursor->next != NULL)
+		cursor->next->prev = new;
+	new->prev = cursor, new->next = cursor->next;
+	cursor->next = new;
+	return (new);
 }
